@@ -1,0 +1,201 @@
+.footer {
+  margin-bottom: 20px;
+  color: $white;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  border-radius: 40px;
+  padding: 60px 65px 40px 65px;
+  background-color: $blue;
+
+  @include laptop {
+    padding: 40px 40px 30px 40px;
+  }
+
+  @include tablet {
+    padding: 30px 30px 20px 30px;
+    border-radius: 15px;
+  }
+
+  @include phone {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.footer__container::after {
+  content: "";
+  border-bottom: 1px solid #235FA8;
+  position: absolute;
+  bottom: 30%;
+  width: 91%;
+
+  @include phone {
+    bottom: 20%;
+    width: 86%;
+  }
+}
+
+.footer__nav {
+  width: 50%;
+
+  @include laptop {
+    width: unset;
+  }
+}
+
+.footer__logo-cover {
+
+  @include laptop {
+    max-width: 260px;
+  }
+
+  @include tablet {
+    max-width: 195px;
+  }
+}
+
+.footer__menu {
+  margin-top: 30px;
+
+  @include laptop {
+    margin-top: 33px;
+  }
+
+  @include tablet {
+    margin-top: 20px;
+  }
+
+  @include phone {
+    margin-bottom: 17px;
+  }
+}
+
+.footer__menu-list {
+  display: flex;
+  justify-content: flex-start;
+
+  @include phone {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.footer__menu-item {
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    margin-right: 18px;
+    font-size: 12px;
+  }
+
+  @include phone {
+    font-size: 10px;
+    margin-right: unset;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-weight: 500;
+
+  @include phone {
+    align-items: flex-start;
+  }
+}
+
+.footer__contacts-phone {
+  font-size: 38px;
+
+  @include tablet {
+    font-size: 28px;
+    white-space: nowrap;    
+  }
+
+  @include phone {
+    font-size: 18px;
+  }
+}
+
+.footer__contacts-mail {
+  font-size: 24px;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include phone {
+    font-size: 16px;
+  }
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+
+  @include laptop {
+    width: unset;
+  }
+}
+
+.footer__formals {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 61px;
+  width: 100%;
+
+  @include laptop {
+    margin-top: 59px;
+  }
+
+  @include tablet {
+    margin-top: 41px;
+  }
+
+  @include phone {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 30px;
+  }
+}
+
+.copy {
+
+  @include laptop {
+  }
+
+  @include tablet {
+    font-size: 10px;
+  }
+}    
+
+.politics {
+
+  @include tablet {
+    font-size: 10px;
+  }
+
+  @include phone {
+    margin-bottom: 6px;
+  }
+}

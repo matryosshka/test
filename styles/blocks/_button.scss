@@ -1,0 +1,60 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 206%;
+  border-radius: 100px;
+  background-color: $orange;
+  padding: 14px 0;
+  color: $white;
+  font-size: 16px;
+
+  @include hover {
+    background-color: #fa9c0f;
+    transition: 0.3s;
+  }
+
+  @include laptop {
+    max-width: 206%;
+  }
+
+  @include tablet {
+    width: 100%;
+    padding: 11px 0;
+    margin-top: 10px;
+  }
+}
+
+.button__main {
+
+  @include phone {
+    display: none;
+  }
+}
+
+.button__mobile {
+  display: none;
+
+  @include phone {
+    display: inline-flex;
+    align-items: baseline;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+.button__icon {
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
+  flex-shrink: 0;
+}
+
+.button__icon-arrow {
+
+  @include phone {
+    width: 9px;
+    height: 7px;
+    margin-left: 7px;
+  }
+}

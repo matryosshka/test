@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  margin: 0;
+  background: $background-gray;
+  color: $font-dark-gray;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: $baseFontSize;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  transition: 0.3s all;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+video {
+  object-fit: cover;
+  object-position: center;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.maincontent {
+  flex: 1;
+}
+
+.container {
+  width: 95%;
+  height: 100%;
+  max-width: $containerWidth;
+  margin: 0 auto;
+
+  @include laptop {
+    max-width: 1110px;
+  }
+
+  @include phone {
+    width: 90%;
+  }
+}

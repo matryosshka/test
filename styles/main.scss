@@ -1,0 +1,72 @@
+$containerWidth: 1470px;
+$baseFontSize: 14px;
+
+//breakpoints
+$desktop: 1600px;
+$laptop: 1300px;
+$tablet: 999px;
+$phone: 750px;
+$small-phone: 320px;
+
+//colors
+$background-gray: #F8F8F8;
+$font-dark-gray: #222222;
+$font-light-gray: #8E8E8E;
+$social-gray: #D4D4D4;
+$blue: #0B4D9E;
+$orange: #FFA21A;
+$white: #FFFFFF;
+
+//fonts
+@font-face {
+  font-family: 'involve';
+  src: url('../fonts/involve-bold-webfont.woff2') format('woff2'),
+       url('../fonts/involve-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'involve';
+  src: url('../fonts/involve-boldoblique-webfont.woff2') format('woff2'),
+       url('../fonts/involve-boldoblique-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'involve';
+  src: url('../fonts/involve-medium-webfont.woff2') format('woff2'),
+       url('../fonts/involve-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'involve';
+  src: url('../fonts/involve-mediumoblique-webfont.woff2') format('woff2'),
+       url('../fonts/involve-mediumoblique-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// setups
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import "./_media.scss";
+@import "./_layout.scss";
+
+//blocks
+@import "./blocks/_header.scss";
+@import "./blocks/_organizer.scss";
+@import "./blocks/_contacts.scss";
+@import "./blocks/_social.scss";
+@import "./blocks/_search.scss";
+@import "./blocks/_form__auth.scss";
+@import "./blocks/_menu.scss";
+@import "./blocks/_breadcrumbs.scss";
+@import "./blocks/_hero.scss";
+@import "./blocks/_sidebar.scss";
+@import "./blocks/_base.scss";
+@import "./blocks/_projects.scss";
+@import "./blocks/_button.scss";
+@import "./blocks/_footer.scss";

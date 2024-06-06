@@ -1,0 +1,82 @@
+.sidebar {
+  background-color: #F8F8F8;
+  border-radius: 20px;
+  padding: 22px 25px 25px 25px;
+  min-width: 26%;
+  margin-right: 24px;
+  height: fit-content;
+
+  @include laptop {
+    min-width: 34%;
+  }
+
+  @include tablet {
+    padding: 20px;
+    margin-right: 10px;
+    max-width: 40%;
+  }
+
+  @include phone {
+    all: unset;
+    margin-bottom: 13px;
+  }
+}
+
+.sidebar__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar__directions {
+  margin-bottom: 35px;
+
+  @include tablet {
+    margin-bottom: 24px;
+  }
+
+  @include phone {
+    margin-bottom: 13px;
+  }
+}
+
+.sidebar__name {
+  font-weight: 600;
+  color: $font-dark-gray;
+  white-space: nowrap;
+  margin-bottom: 14px;
+
+  @include tablet {
+    margin-bottom: 14px;
+    font-size: 12px;
+  }
+
+  @include phone {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+}
+
+.sidebar__item {
+  background-color: $white;
+  padding: 5px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  width: fit-content;
+
+  @include hover {
+    color: $white;
+    background-color: $blue;
+    transition: 0.3s;
+  }
+
+  @include phone {
+    background-color: $background-gray;
+    padding: 5px 12px;
+    font-size: 8px;
+    margin-right: 6px;
+    white-space: nowrap;
+  }
+}

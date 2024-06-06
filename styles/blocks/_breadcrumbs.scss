@@ -1,0 +1,58 @@
+.breadcrumbs {
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 22px;
+  }
+
+  @include phone {
+    margin-bottom: 18px;
+  }
+}
+
+.breadcrumbs__list {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbs__item {
+  display: flex;
+  align-items: center;
+  color: $font-light-gray;
+  font-size: 14px;
+  margin-right: 3px;
+
+  &:last-child {
+    margin-right: 0;
+    
+    &::after {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background: url('../img/icons/arrow.svg') no-repeat;
+    width: 7px;
+    height: 6px;
+    margin-left: 7px;
+  }
+
+  &--active {
+    color: $font-dark-gray;
+  }
+
+  @include hover {
+    color: $font-dark-gray;
+    transition: 0.3s;
+  }
+
+  @include tablet {
+    font-size: 12px;
+  }
+
+  @include phone {
+    font-size: 8px;
+  }
+}

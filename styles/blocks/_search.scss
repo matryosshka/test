@@ -1,0 +1,88 @@
+.search {
+  width: 65%;
+  padding: 5px 15px;
+
+  @include laptop {
+    width: 67%;
+  }
+
+  @include tablet {
+    width: 64%;
+    padding: 5px 7px;
+  }
+}
+
+.search__form {
+  position: relative;
+}
+
+.search__input {
+  width: 100%;
+  padding: 15px 60px 15px 20px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  background-color: $background-gray;
+  color: $font-light-gray;
+  transition: 0.4s;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $social-gray;
+    color: $font-dark-gray;
+  }
+
+  @include tablet {
+    padding: 15px 60px 15px 14px;
+    font-size: 12px;
+  }
+}
+
+.search__input-div {
+
+  @include phone {
+    display: none;
+  }
+}
+
+.search__form .search__input-div {
+  width: 100%;
+}
+
+.search__button {
+  position: absolute;
+  top: 16px;
+  right: 27px;
+  bottom: 0;
+  padding: 0 16px;
+  border: none;
+  background: 0 0;
+  font-size: 0;
+
+  @include tablet {
+    top: 14px;
+    right: 21px;
+    padding: 0px 11px;
+  }
+
+  @include phone {
+    top: 0px;
+    right: 40px;
+    padding: unset;
+  }
+}
+
+.search__form .search__button-icon {
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  color: $font-dark-gray;
+  background: url('../img/icons/search.svg') 0 0 no-repeat;
+
+  @include phone {
+    background: url('../img/icons/search-mobile.svg') 0 0 no-repeat;
+    width: 30px;
+    height: 30px;
+  }
+}

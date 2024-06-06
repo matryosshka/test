@@ -1,0 +1,28 @@
+.form__auth {
+  padding-top: 5px;
+
+  @include tablet {
+    padding-top: 8px;
+  }
+
+  @include phone {
+    padding-top: unset;
+  }
+}
+
+.form__auth-icon {
+  width: 50px;
+  height: 50px;
+
+  @include tablet {
+    width: 40px;
+    height: 40px;
+  }
+
+  @include phone {
+    width: 30px;
+    height: 30px;
+    padding-top: unset;
+    margin-right: 50px;
+  }
+}

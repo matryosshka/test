@@ -1,0 +1,93 @@
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include hover {
+    color: $white;
+    background-color: $blue;
+    transition: 0.3s;
+  }
+}
+
+.internal__menu {
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-top: 22px;
+    margin-bottom: 21px;
+  }
+
+  @include phone {
+    margin-top: 22px;
+    margin-bottom: 23px;
+  }
+}
+
+.internal__menu-list {
+
+  @include tablet {
+    justify-content: flex-start;
+  }
+}
+
+.internal__menu-item {
+  background: $background-gray;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 16px;
+  margin-right: 30px;
+  border-radius: 100px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include tablet {
+    padding: 15px 15px;
+    width: unset;
+    font-size: 12px;
+    margin-right: 17px;
+  }
+
+  @include phone {
+    padding: 12px 16px;
+    width: unset;
+    font-size: 10px;
+    margin-right: 4px;
+    white-space: nowrap;
+  }
+}
+
+.mobile__menu {
+  display: none;
+
+  @include phone {
+    display: inline-flex;
+  }  
+}
+
+.mobile__menu-button {
+
+  @include phone {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.mobile__menu-svg {
+
+  @include phone {
+    background: url('../img/icons/menu.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 2;
+  }
+}

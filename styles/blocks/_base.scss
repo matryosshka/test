@@ -1,0 +1,39 @@
+.base {
+  margin-bottom: 29px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
+  @include phone {
+    margin-bottom: 15px;
+  }
+}
+
+.base__container {
+  background: white;
+  border-radius: 40px;
+  padding: 60px;
+
+  @include laptop {
+    padding: 40px;
+  }
+
+  @include tablet {
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  @include phone {
+    padding: 20px;
+    overflow: hidden;
+  }
+}
+
+.base__content {
+  display: flex;
+
+  @include phone {
+    flex-direction: column;
+  }
+}
